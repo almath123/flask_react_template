@@ -3,7 +3,7 @@ from flask.json import jsonify
 
 app = Flask(__name__, static_url_path='', static_folder="build/")
 
-@app.route('/index.html')
+@app.route('/')
 def send_index():
     return app.send_static_file('index.html')
 
