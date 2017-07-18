@@ -1,7 +1,7 @@
 FROM python:2.7-slim
 
 WORKDIR /docker_app
-ADD build /docker_app
+ADD build /docker_app/build
 ADD flask_react.py /docker_app/
 ADD requirements.txt /docker_app/
 

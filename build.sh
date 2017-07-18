@@ -1,3 +1,3 @@
 #! /bin/sh
 npm run build
-sudo docker build -t flask-react .
+sudo docker build --rm -t flask-react -f ./docker/Dockerfile .
